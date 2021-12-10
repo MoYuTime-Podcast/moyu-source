@@ -9,6 +9,8 @@ IMG_URL = 'https://moyutime-podcast.github.io/image/img.jpg'
 feed = feedparser.parse(URL)
 entries = feed['entries']
 
+print(f'loading podcast from {URL}')
+
 size = index = len(entries)
 
 for entry in entries:
